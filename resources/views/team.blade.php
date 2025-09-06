@@ -130,7 +130,7 @@
                 <div class="team-member">
                     <img src="https://i.pravatar.cc/150?img=1" alt="Teamlid 1">
                     <h3>Cheesy dragon</h3>
-                    <p>Oprichter en VR-enthousiasteling. Altijd op zoek naar de nieuwste hardware en ervaringen.</p>
+                    <p>Oprichter en VR-enthousiasteling. Altijd op zoek naar de nieuwste hardware en ervaringen of vr ideeën.</p>
                 </div>
                 <!-- Voorbeeld Teamlid 2 -->
                 <div class="team-member">
