@@ -135,8 +135,8 @@
                 <!-- Voorbeeld Teamlid 2 -->
                 <div class="team-member">
                     <img src="https://i.pravatar.cc/150?img=2" alt="Teamlid 2">
-                    <h3>[Naam]</h3>
-                    <p>Community Manager. Zorgt voor een gezellige en actieve community op Discord en tijdens events.</p>
+                    <h3>happyschaap</h3>
+                    <p>onze beste happyschaap is onze event manager zonder hem hebben we geen leuke event's in onze community.</p>
                 </div>
                 <!-- Voorbeeld Teamlid 3 -->
                 <div class="team-member">
