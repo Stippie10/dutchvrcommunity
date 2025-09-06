@@ -1,3 +1,7 @@
+// Over ons pagina
+Route::get('/over-ons', function () {
+    return view('about');
+});
 <?php
 
 use Illuminate\Support\Facades\Route;
