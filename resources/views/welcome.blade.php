@@ -132,7 +132,7 @@
             Ontdek, deel en beleef samen de nieuwste Virtual Reality ervaringen.<br>
             Word lid en ontmoet andere enthousiastelingen!
         </div>
-        <a href="https://discord.gg/jouw-discord-link" target="_blank" class="cta-btn">Word lid van onze Discord</a>
+        <a href="https://discord.gg/WJSGRRY3x9" target="_blank" class="cta-btn">Word lid van onze Discord</a>
         <!-- Dummy sections for anchor links -->
         <div id="over-ons" style="margin-top:120px"></div>
         <div id="events" style="margin-top:120px"></div>
@@ -141,7 +141,7 @@
     <div class="footer">
         &copy; {{ date('Y') }} Dutch VR Community | Alle rechten voorbehouden
         <br>
-        <a href="https://discord.gg/jouw-discord-link" target="_blank" style="color:#7289da;text-decoration:none;font-weight:600; margin-right:16px;">
+        <a href="https://discord.gg/WJSGRRY3x9" target="_blank" style="color:#7289da;text-decoration:none;font-weight:600; margin-right:16px;">
             <svg style="vertical-align:middle;" width="20" height="20" viewBox="0 0 245 240" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="122.5" cy="120" r="120" fill="#7289da"/>
                 <path d="M104.4 104.6c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1 5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zm36.2 0c-5.7 0-10.2 5-10.2 11.1 0 6.1 4.6 11.1 10.2 11.1 5.7 0 10.2-5 10.2-11.1 0-6.1-4.5-11.1-10.2-11.1z" fill="#fff"/>
