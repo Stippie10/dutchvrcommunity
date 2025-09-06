@@ -116,7 +116,7 @@
 <body>
     <div class="header">
         <nav class="nav">
-            <a href="{{ url('/over-ons') }}">Over ons</a>
+            <a href="/over-ons">Over ons</a>
             <a href="#events">Events</a>
             <a href="#wie-zijn-we">Wie zijn we</a>
         </nav>
@@ -132,6 +132,10 @@
             Word lid en ontmoet andere enthousiastelingen!
         </div>
         <a href="{{ route('register') }}" class="cta-btn">Word lid</a>
+        <!-- Dummy sections for anchor links -->
+        <div id="over-ons" style="margin-top:120px"></div>
+        <div id="events" style="margin-top:120px"></div>
+        <div id="wie-zijn-we" style="margin-top:120px"></div>
     </div>
     <div class="footer">
         &copy; {{ date('Y') }} Dutch VR Community | Alle rechten voorbehouden
