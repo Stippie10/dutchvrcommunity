@@ -28,4 +28,9 @@ Route::get('/over-ons', function () {
 
 Route::get('/team', function () {
     return view('team');
+
+});
+
+Route::get('/events', function () {
+    return view('events');
 });
