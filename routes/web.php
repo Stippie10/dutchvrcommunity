@@ -19,10 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', function () {
-    return 'Registratiepagina komt hier!';
-})->name('register');
-
 Route::get('/over-ons', function () {
     return view('about');
 });
