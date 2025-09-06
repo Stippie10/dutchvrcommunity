@@ -126,21 +126,21 @@
         <div class="content-box">
             <div class="title">Ons Team</div>
             <div class="team-grid">
-                <!-- Voorbeeld Teamlid 1 -->
+                <!-- Teamlid 1 -->
                 <div class="team-member">
-                    <img src="https://i.pravatar.cc/150?img=1" alt="Teamlid 1">
+                    <img src="{{ asset('images/teamlid1.png') }}" alt="Teamlid Cheesy dragon">
                     <h3>Cheesy dragon</h3>
                     <p>Oprichter en VR-enthousiasteling. Altijd op zoek naar de nieuwste hardware en ervaringen of vr ideeën.</p>
                 </div>
-                <!-- Voorbeeld Teamlid 2 -->
+                <!-- Teamlid 2 -->
                 <div class="team-member">
-                    <img src="https://i.pravatar.cc/150?img=2" alt="Teamlid 2">
+                    <img src="{{ asset('images/teamlid2.png') }}" alt="Teamlid happyschaap">
                     <h3>happyschaap</h3>
                     <p>onze beste happyschaap is onze event manager zonder hem hebben we geen leuke event's in onze community.</p>
                 </div>
-                <!-- Voorbeeld Teamlid 3 -->
+                <!-- Teamlid 3 -->
                 <div class="team-member">
-                    <img src="https://i.pravatar.cc/150?img=3" alt="Teamlid 3">
+                    <img src="{{ asset('images/teamlid3.png') }}" alt="Teamlid stippie">
                     <h3>stippie</h3>
                     <p>onze beste stippie is onze web developer. Hij zorgt ervoor dat onze website altijd up-to-date en gebruiksvriendelijk is.</p>
                 </div>
