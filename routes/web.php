@@ -1,8 +1,5 @@
-// Over ons pagina
-Route::get('/over-ons', function () {
-    return view('about');
-});
 <?php
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -25,4 +22,6 @@ Route::get('/register', function () {
     return 'Registratiepagina komt hier!';
 })->name('register');
 
-// ...existing code...
+ Route::get('/over-ons', function () {
+    return view('about');
+    });
