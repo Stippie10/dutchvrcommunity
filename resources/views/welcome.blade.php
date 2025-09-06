@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -15,6 +14,36 @@
             background: linear-gradient(120deg, #1a1a2e 0%, #16213e 100%), url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
             color: #fff;
         }
+        .header {
+            width: 100%;
+            background: rgba(26,26,46,0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0 2px 12px #0004;
+        }
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav a:hover {
+            background: #ff2d20;
+            color: #fff;
+        }
         .overlay {
             background: rgba(26,26,46,0.85);
             min-height: 100vh;
@@ -22,6 +51,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-top: 90px; /* ruimte voor header */
         }
         .logo {
             width: 120px;
@@ -77,10 +107,21 @@
             .title { font-size: 2rem; }
             .subtitle { font-size: 1rem; }
             .logo { width: 80px; height: 80px; }
+            .nav { gap: 1rem; }
+            .nav a { font-size: 1rem; }
+            .overlay { padding-top: 70px; }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <nav class="nav">
+            <a href="#over-ons">Over ons</a>
+            <a href="#events">Events</a>
+            <a href="#wie-zijn-we">Wie zijn we</a>
+        </nav>
+    </div>
+    <div class="overlay">
         <div class="logo">
             <img src="{{ asset('images/vrlogo.gif') }}" alt="Dutch VR Community Logo" style="width:100px; height:100px; object-fit:contain;">
         </div>
@@ -91,6 +132,10 @@
             Word lid en ontmoet andere enthousiastelingen!
         </div>
         <a href="{{ route('register') }}" class="cta-btn">Word lid</a>
+        <!-- Dummy sections for anchor links -->
+        <div id="over-ons" style="margin-top:120px"></div>
+        <div id="events" style="margin-top:120px"></div>
+        <div id="wie-zijn-we" style="margin-top:120px"></div>
     </div>
     <div class="footer">
         &copy; {{ date('Y') }} Dutch VR Community | Alle rechten voorbehouden
