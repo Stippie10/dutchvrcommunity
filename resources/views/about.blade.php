@@ -78,7 +78,7 @@
         }
         .footer {
             position: fixed;
-            bottom: 30px;
+            bottom: 10px;
             width: 100%;
             text-align: center;
             color: #bbb;
