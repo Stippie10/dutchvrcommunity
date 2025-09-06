@@ -98,7 +98,6 @@
     <div class="header">
         <nav class="nav">
             <a href="/">Home</a>
-            <a href="/over-ons">Over ons</a>
             <a href="/#events">Events</a>
             <a href="/#wie-zijn-we">Wie zijn we</a>
         </nav>
