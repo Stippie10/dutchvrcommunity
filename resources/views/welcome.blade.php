@@ -117,6 +117,7 @@
     <div class="header">
         <nav class="nav">
             <a href="/over-ons">Over ons</a>
+            <a href="/team">Team</a>
             <a href="#events">Events</a>
             <a href="#wie-zijn-we">Wie zijn we</a>
         </nav>

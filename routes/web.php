@@ -25,3 +25,7 @@ Route::get('/register', function () {
 Route::get('/over-ons', function () {
     return view('about');
 });
+
+Route::get('/team', function () {
+    return view('team');
+});

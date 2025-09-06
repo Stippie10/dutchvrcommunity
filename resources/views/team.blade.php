@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Over ons | Dutch VR Community</title>
+    <title>Ons Team | Dutch VR Community</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <style>
@@ -51,11 +51,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 90px 2rem 2rem; /* ruimte voor header en wat padding */
+            padding: 90px 2rem 2rem;
             box-sizing: border-box;
         }
         .content-box {
-            max-width: 800px;
+            max-width: 900px;
             text-align: center;
         }
         .title {
@@ -66,15 +66,41 @@
             color: #ff2d20;
             text-shadow: 0 2px 16px #0008;
         }
-        .content-box p {
-            font-size: 1.2rem;
-            line-height: 1.7;
-            margin-bottom: 1.5em;
-            color: #eee;
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
-        .highlight {
-            color: #ff2d20;
-            font-weight: bold;
+        .team-member {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px #0002;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 32px #0004;
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #ff2d20;
+        }
+        .team-member h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        .team-member p {
+            font-size: 1rem;
+            color: #ccc;
+            line-height: 1.5;
         }
         .footer {
             position: fixed;
@@ -85,13 +111,6 @@
             font-size: 1rem;
             letter-spacing: 1px;
         }
-        @media (max-width: 600px) {
-            .title { font-size: 2rem; }
-            .content-box p { font-size: 1rem; }
-            .nav { gap: 1rem; }
-            .nav a { font-size: 1rem; }
-            .overlay { padding-top: 70px; }
-        }
     </style>
 </head>
 <body>
@@ -101,22 +120,31 @@
             <a href="/over-ons">Over ons</a>
             <a href="/team">Team</a>
             <a href="/#events">Events</a>
-            <a href="/#wie-zijn-we">Wie zijn we</a>
         </nav>
     </div>
     <div class="overlay">
         <div class="content-box">
-            <div class="title">Over ons</div>
-            <p>
-                Welkom bij <span class="highlight">Dutch VR Community</span>!<br>
-                Wij zijn dé plek voor iedereen die gepassioneerd is over Virtual Reality in Nederland. Onze community brengt VR-liefhebbers, gamers, ontwikkelaars en nieuwsgierigen samen om ervaringen te delen, kennis uit te wisselen en samen de toekomst van VR te ontdekken.
-            </p>
-            <p>
-                <span class="highlight">Onze missie</span> is om een open, gezellige en inspirerende omgeving te bieden waar iedereen zich welkom voelt. Of je nu net begint met VR of al jaren actief bent, bij ons vind je altijd gelijkgestemden en nieuwe uitdagingen.
-            </p>
-            <p>
-                Sluit je aan bij onze evenementen, doe mee aan discussies, of ontdek de nieuwste VR-technologieën samen met ons. Samen bouwen we aan de grootste en leukste VR-community van Nederland!
-            </p>
+            <div class="title">Ons Team</div>
+            <div class="team-grid">
+                <!-- Voorbeeld Teamlid 1 -->
+                <div class="team-member">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Teamlid 1">
+                    <h3>Stippie</h3>
+                    <p>Oprichter en VR-enthousiasteling. Altijd op zoek naar de nieuwste hardware en ervaringen.</p>
+                </div>
+                <!-- Voorbeeld Teamlid 2 -->
+                <div class="team-member">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="Teamlid 2">
+                    <h3>[Naam]</h3>
+                    <p>Community Manager. Zorgt voor een gezellige en actieve community op Discord en tijdens events.</p>
+                </div>
+                <!-- Voorbeeld Teamlid 3 -->
+                <div class="team-member">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="Teamlid 3">
+                    <h3>[Naam]</h3>
+                    <p>Content Creator. Deelt de gaafste VR-momenten via streams en video's.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
