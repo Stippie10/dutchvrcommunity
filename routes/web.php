@@ -31,5 +31,3 @@ Route::get('/team', function () {
 Route::get('/events', function () {
     return view('events');
 });
-
-Auth::routes();
