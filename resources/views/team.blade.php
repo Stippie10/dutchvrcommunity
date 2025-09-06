@@ -141,8 +141,8 @@
                 <!-- Voorbeeld Teamlid 3 -->
                 <div class="team-member">
                     <img src="https://i.pravatar.cc/150?img=3" alt="Teamlid 3">
-                    <h3>[Naam]</h3>
-                    <p>Content Creator. Deelt de gaafste VR-momenten via streams en video's.</p>
+                    <h3>stippie</h3>
+                    <p>onze beste stippie is onze web developer. Hij zorgt ervoor dat onze website altijd up-to-date en gebruiksvriendelijk is.</p>
                 </div>
             </div>
         </div>
