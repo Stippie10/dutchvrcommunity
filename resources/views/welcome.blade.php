@@ -132,7 +132,7 @@
             Ontdek, deel en beleef samen de nieuwste Virtual Reality ervaringen.<br>
             Word lid en ontmoet andere enthousiastelingen!
         </div>
-        <a href="{{ route('register') }}" class="cta-btn">Word lid</a>
+        <a href="https://discord.gg/jouw-discord-link" target="_blank" class="cta-btn">Word lid van onze Discord</a>
         <!-- Dummy sections for anchor links -->
         <div id="over-ons" style="margin-top:120px"></div>
         <div id="events" style="margin-top:120px"></div>
