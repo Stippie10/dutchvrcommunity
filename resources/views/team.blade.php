@@ -140,7 +140,7 @@
                 </div>
                 <!-- Teamlid 3 -->
                 <div class="team-member">
-                    <img src="{{ asset('images/teamlid3.png') }}" alt="Teamlid stippie">
+                    <img src="{{ asset('images/teamlid3.png') }}" alt="Teamlid 3">
                     <h3>stippie</h3>
                     <p>onze beste stippie is onze web developer. Hij zorgt ervoor dat onze website altijd up-to-date en gebruiksvriendelijk is.</p>
                 </div>
