@@ -41,7 +41,7 @@
             transition: background 0.2s, color 0.2s;
         }
         .nav a:hover {
-            background: #ff2d20;
+            background: #f3ececff;
             color: #fff;
         }
         .overlay {
