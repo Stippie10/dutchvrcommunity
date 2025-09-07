@@ -1,2 +1,56 @@
-<!-- In de <head> van je Blade file -->
-<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+/* Animated gradient background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460, #1a1a2e);
+    background-size: 400% 400%;
+    animation: gradientBG 18s ease infinite;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Floating glow balls */
+.animated-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.glow {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.22;
+    filter: blur(40px);
+    animation: moveGlow 16s linear infinite alternate;
+}
+
+.glow1 {
+    width: 320px; height: 320px;
+    background: #ff2d20;
+    left: 10vw; top: 15vh;
+    animation-delay: 0s;
+}
+.glow2 {
+    width: 220px; height: 220px;
+    background: #7289da;
+    left: 70vw; top: 60vh;
+    animation-delay: 4s;
+}
+.glow3 {
+    width: 180px; height: 180px;
+    background: #fff;
+    left: 60vw; top: 10vh;
+    opacity: 0.12;
+    animation-delay: 8s;
+}
+
+@keyframes moveGlow {
+    0% { transform: translateY(0) scale(1);}
+    100% { transform: translateY(60px) scale(1.1);}
+}
