@@ -11,52 +11,8 @@
             margin: 0;
             font-family: 'Figtree', sans-serif;
             min-height: 100vh;
-            background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460, #1a1a2e);
-            background-size: 400% 400%;
-            animation: gradientBG 18s ease infinite;
+            background: linear-gradient(120deg, #1a1a2e 0%, #16213e 100%), url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
             color: #fff;
-            overflow-x: hidden;
-        }
-        @keyframes gradientBG {
-            0% {background-position: 0% 50%;}
-            50% {background-position: 100% 50%;}
-            100% {background-position: 0% 50%;}
-        }
-        .animated-bg {
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            pointer-events: none;
-            z-index: 0;
-        }
-        .glow {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.25;
-            filter: blur(40px);
-            animation: moveGlow 16s linear infinite alternate;
-        }
-        .glow1 {
-            width: 320px; height: 320px;
-            background: #ff2d20;
-            left: 10vw; top: 15vh;
-            animation-delay: 0s;
-        }
-        .glow2 {
-            width: 220px; height: 220px;
-            background: #7289da;
-            left: 70vw; top: 60vh;
-            animation-delay: 4s;
-        }
-        .glow3 {
-            width: 180px; height: 180px;
-            background: #fff;
-            left: 60vw; top: 10vh;
-            opacity: 0.12;
-            animation-delay: 8s;
-        }
-        @keyframes moveGlow {
-            0% { transform: translateY(0) scale(1);}
-            100% { transform: translateY(60px) scale(1.1);}
         }
         .header {
             width: 100%;
@@ -96,8 +52,6 @@
             justify-content: center;
             align-items: center;
             padding-top: 90px; /* ruimte voor header */
-            z-index: 2;
-            position: relative;
         }
         .logo {
             width: 120px;
@@ -148,8 +102,30 @@
             color: #bbb;
             font-size: 1rem;
             letter-spacing: 1px;
-            z-index: 3;
-            position: relative;
+        }
+        /* Animated lines overlay */
+        .lines-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .line {
+            position: absolute;
+            width: 2px;
+            height: 180vh;
+            background: linear-gradient(180deg, #fff2 0%, #ff2d2030 50%, #fff0 100%);
+            opacity: 0.25;
+            animation: moveLine 8s linear infinite;
+        }
+        .line1 { left: 15vw; animation-delay: 0s; }
+        .line2 { left: 35vw; animation-delay: 2s; }
+        .line3 { left: 55vw; animation-delay: 4s; }
+        .line4 { left: 75vw; animation-delay: 6s; }
+        @keyframes moveLine {
+            0% { top: -80vh; }
+            100% { top: 100vh; }
         }
         @media (max-width: 600px) {
             .title { font-size: 2rem; }
@@ -162,17 +138,12 @@
     </style>
 </head>
 <body>
-    <div class="animated-bg">
-        <div class="glow glow1"></div>
-        <div class="glow glow2"></div>
-        <div class="glow glow3"></div>
-    </div>
     <div class="header">
         <nav class="nav">
             <a href="/over-ons">Over ons</a>
             <a href="/team">Team</a>
             <a href="/events">Events</a>
-            <a href="/wie-zijn-we">Wie zijn we</a>
+            <a href="#wie-zijn-we">Wie zijn we</a>
         </nav>
     </div>
     <div class="overlay">
@@ -218,6 +189,12 @@
             </svg>
             &nbsp;YouTube
         </a>
+    </div>
+    <div class="lines-bg">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
     </div>
 </body>
 </html>
