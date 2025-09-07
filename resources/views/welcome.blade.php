@@ -11,8 +11,52 @@
             margin: 0;
             font-family: 'Figtree', sans-serif;
             min-height: 100vh;
-            background: linear-gradient(120deg, #1a1a2e 0%, #16213e 100%), url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460, #1a1a2e);
+            background-size: 400% 400%;
+            animation: gradientBG 18s ease infinite;
             color: #fff;
+            overflow-x: hidden;
+        }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .animated-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .glow {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.25;
+            filter: blur(40px);
+            animation: moveGlow 16s linear infinite alternate;
+        }
+        .glow1 {
+            width: 320px; height: 320px;
+            background: #ff2d20;
+            left: 10vw; top: 15vh;
+            animation-delay: 0s;
+        }
+        .glow2 {
+            width: 220px; height: 220px;
+            background: #7289da;
+            left: 70vw; top: 60vh;
+            animation-delay: 4s;
+        }
+        .glow3 {
+            width: 180px; height: 180px;
+            background: #fff;
+            left: 60vw; top: 10vh;
+            opacity: 0.12;
+            animation-delay: 8s;
+        }
+        @keyframes moveGlow {
+            0% { transform: translateY(0) scale(1);}
+            100% { transform: translateY(60px) scale(1.1);}
         }
         .header {
             width: 100%;
@@ -52,6 +96,8 @@
             justify-content: center;
             align-items: center;
             padding-top: 90px; /* ruimte voor header */
+            z-index: 2;
+            position: relative;
         }
         .logo {
             width: 120px;
@@ -102,6 +148,8 @@
             color: #bbb;
             font-size: 1rem;
             letter-spacing: 1px;
+            z-index: 3;
+            position: relative;
         }
         @media (max-width: 600px) {
             .title { font-size: 2rem; }
@@ -114,6 +162,11 @@
     </style>
 </head>
 <body>
+    <div class="animated-bg">
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+        <div class="glow glow3"></div>
+    </div>
     <div class="header">
         <nav class="nav">
             <a href="/over-ons">Over ons</a>
