@@ -135,6 +135,49 @@
             .nav a { font-size: 1rem; }
             .overlay { padding-top: 70px; }
         }
+        /* Glowing background animation */
+        .animated-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .glow {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: pulse 3s infinite;
+        }
+        .glow1 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,45,32,0.7) 0%, rgba(255,45,32,0) 70%);
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: 0s;
+        }
+        .glow2 {
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(255,45,32,0.7) 0%, rgba(255,45,32,0) 70%);
+            top: 30%; left: 70%;
+            transform: translate(-50%, -50%);
+            animation-delay: 1s;
+        }
+        .glow3 {
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255,45,32,0.7) 0%, rgba(255,45,32,0) 70%);
+            top: 70%; left: 30%;
+            transform: translate(-50%, -50%);
+            animation-delay: 2s;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.9); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(0.9); }
+        }
     </style>
 </head>
 <body>
@@ -195,6 +238,11 @@
         <div class="line line2"></div>
         <div class="line line3"></div>
         <div class="line line4"></div>
+    </div>
+    <div class="animated-bg">
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+        <div class="glow glow3"></div>
     </div>
 </body>
 </html>
