@@ -1,0 +1,2 @@
+<!-- In de <head> van je Blade file -->
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
