@@ -11,7 +11,7 @@
             margin: 0;
             font-family: 'Figtree', sans-serif;
             min-height: 100vh;
-            background: linear-gradient(120deg, #1a1a2e 0%, #16213e 100%), url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            background: linear-gradient(120deg, rgba(26,26,46,0.35) 0%, rgba(22,33,62,0.35) 100%), url("{{ asset('images/welcome-bg.png') }}") center/cover no-repeat;
             color: #fff;
         }
         .header {
@@ -45,7 +45,7 @@
             color: #fff;
         }
         .overlay {
-            background: rgba(26,26,46,0.85);
+            background: rgba(26,26,46,0.60);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -103,30 +103,6 @@
             font-size: 1rem;
             letter-spacing: 1px;
         }
-        /* Animated lines overlay */
-        .lines-bg {
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            pointer-events: none;
-            z-index: 1;
-            overflow: hidden;
-        }
-        .line {
-            position: absolute;
-            width: 2px;
-            height: 180vh;
-            background: linear-gradient(180deg, #fff2 0%, #ff2d2030 50%, #fff0 100%);
-            opacity: 0.25;
-            animation: moveLine 8s linear infinite;
-        }
-        .line1 { left: 15vw; animation-delay: 0s; }
-        .line2 { left: 35vw; animation-delay: 2s; }
-        .line3 { left: 55vw; animation-delay: 4s; }
-        .line4 { left: 75vw; animation-delay: 6s; }
-        @keyframes moveLine {
-            0% { top: -80vh; }
-            100% { top: 100vh; }
-        }
         @media (max-width: 600px) {
             .title { font-size: 2rem; }
             .subtitle { font-size: 1rem; }
@@ -134,49 +110,6 @@
             .nav { gap: 1rem; }
             .nav a { font-size: 1rem; }
             .overlay { padding-top: 70px; }
-        }
-        /* Glowing background animation */
-        .animated-bg {
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
-        .glow {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.6;
-            animation: pulse 3s infinite;
-        }
-        .glow1 {
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(255,45,32,0.7) 0%, rgba(255,45,32,0) 70%);
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            animation-delay: 0s;
-        }
-        .glow2 {
-            width: 250px;
-            height: 250px;
-            background: radial-gradient(circle, rgba(255,45,32,0.7) 0%, rgba(255,45,32,0) 70%);
-            top: 30%; left: 70%;
-            transform: translate(-50%, -50%);
-            animation-delay: 1s;
-        }
-        .glow3 {
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(255,45,32,0.7) 0%, rgba(255,45,32,0) 70%);
-            top: 70%; left: 30%;
-            transform: translate(-50%, -50%);
-            animation-delay: 2s;
-        }
-        @keyframes pulse {
-            0% { transform: scale(0.9); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(0.9); }
         }
     </style>
 </head>
@@ -233,16 +166,6 @@
             &nbsp;YouTube
         </a>
     </div>
-    <div class="lines-bg">
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-        <div class="line line3"></div>
-        <div class="line line4"></div>
-    </div>
-    <div class="animated-bg">
-        <div class="glow glow1"></div>
-        <div class="glow glow2"></div>
-        <div class="glow glow3"></div>
-    </div>
+    
 </body>
 </html>
