@@ -206,7 +206,7 @@
         <div id="wie-zijn-we" style="margin-top:120px"></div>
     </div>
     <div class="footer">
-        &copy; {{ date('Y') }} Dutch VR Community | Alle rechten voorbehouden
+        &copy; {{ date('Y') }} Dutch VR Community | Alle rechten voorbehouden made by stippie
         <br>
         <a href="https://discord.gg/WJSGRRY3x9" target="_blank" style="color:#7289da;text-decoration:none;font-weight:600; margin-right:16px;">
             <svg style="vertical-align:middle;" width="20" height="20" viewBox="0 0 245 240" fill="none" xmlns="http://www.w3.org/2000/svg">
